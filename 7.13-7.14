@@ -1,0 +1,38 @@
+// class
+import 'dart:io';
+
+class Travel {
+  int kilometer;
+  int hours;
+  late int sum;
+
+  Travel({required this.kilometer, required this.hours});
+
+  getData(kilometer, hours) {
+    this.kilometer = kilometer;
+    this.hours = hours;
+  }
+
+  void showData() {
+    print("Kilometer : $kilometer");
+    print("Hours : $hours");
+  }
+
+  add() {
+    sum = kilometer + hours;
+    print("Sum : $sum");
+  }
+}
+
+
+// main
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  Travel value = Travel(kilometer: 1000, hours: 1);
+  value.getData(1000, 1);
+  value.showData();
+  value.add();
+}
+
