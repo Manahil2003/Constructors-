@@ -1,0 +1,27 @@
+//Class
+import 'dart:io';
+
+class Book {
+  int pages;
+  int price;
+  String title;
+
+  Book({required this.pages, required this.price, required this.title});
+
+  void PrintData() {
+    print(pages);
+    print(price);
+    print(title);
+  }
+}
+
+
+//main
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  Book value = Book(pages: 1000, price: 8000, title: 'The lion King');
+  value.PrintData();
+}
+
