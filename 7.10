@@ -1,0 +1,28 @@
+//Class
+
+import 'dart:io';
+
+class TV {
+  String brandName;
+  String model;
+  int price;
+
+  TV({required this.brandName, required this.model, required this.price});
+
+  void PrintData() {
+    print(brandName);
+    print(model);
+    print(price);
+  }
+}
+
+
+//main
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  TV value = TV(brandName: 'Samsung', model: 'Azw34', price: 2239000);
+  value.PrintData();
+}
+
