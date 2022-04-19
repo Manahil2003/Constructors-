@@ -1,0 +1,27 @@
+//class
+import 'dart:io';
+
+class Count {
+  static int count = 0;
+
+  Count() {
+    count = count + 1;
+  }
+  void display() {
+    print("Objects Created : $count");
+  }
+}
+
+ 
+//main
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  Count value = Count();
+  Count value1 = Count();
+  Count value3 = Count();
+  value3.display();
+}
+
+
