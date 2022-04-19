@@ -1,0 +1,26 @@
+//Class
+import 'dart:io';
+
+class func {
+  String ch = 'x';
+  int num = 0;
+
+  func({required this.ch, required this.num});
+
+  void PrintData() {
+    print(ch);
+    print(num);
+  }
+}
+
+
+//main
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  func value = func(ch: 'A', num: 8);
+  value.PrintData();
+}
+
+
