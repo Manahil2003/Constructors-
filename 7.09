@@ -1,0 +1,25 @@
+//class
+import 'dart:io';
+
+class func {
+  late int marks;
+  late String grade;
+
+  func({required this.marks, required this.grade});
+
+  void PrintData() {
+    print(marks);
+    print(grade);
+  }
+}
+
+
+//main
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  func value = func(marks: 100, grade: 'A');
+  value.PrintData();
+}
+
